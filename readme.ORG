@@ -1,0 +1,77 @@
+* Chrome DuckDuckGo !Bangs
+A chrome extension for making it easier to search using [[https://duckduckgo.com/bang][DuckDuckGo !bangs]].
+DuckDuckGo is a search engine that does not track you. DuckDuckGo !bangs allow you to search on thousands of sites, directly.
+This extension add two functions.
+- Add !bang buttons to the DuckDuckGo search results page.
+- add context menu to search using [[https://duckduckgo.com/bang][DuckDuckGo !bangs]] for selected text.
+Supports 19 !bangs at the moment of over 9000 available.
+
+** Supported bangs
+- Google !g
+- Google Images: !gi
+- Google Maps: !gm
+- Google Translate: !tr
+- Youtube: !yt
+- Dictionary.​com: !di
+- Google News: !gn
+- Hacker News: !hn
+- Facebook: !fb
+- Twitter: !tw
+- Wikipedia: !wi
+- IMDb: !imd
+- Bing: !b
+- Github: !git
+- StackOverflow: !so
+- Reddit: !r
+- Amazon: !a
+- Piratebay: !piratebay
+- Avaxhome: !avax
+- RaRBG: !rarbg
+
+
+** Credits
+[[https://github.com/ChimeraCoder][Aditya Mukerjee]] I have been using his [[https://github.com/ChimeraCoder/duckduckbang][Firefox addon]] for some time and it gave me the idea for the buttons.
+ I also used his code as a starting point for adding the buttons to the search result.
+[[https://duckduckgo.com/][DuckDuckGo.com]] for icons, !bangs and their awesome search engine.
+
+** Possible improvements
+- Add custom buttons and links by providing a !bang and title.
+- Custom sort order of buttons.
+- Custom sort links in context menu.
+- Add buttons to other search engines like Google.
+
+
+** Development
+Clone the repo
+#+BEGIN_SRC shell
+git clone
+#+END_SRC
+
+*** Gulp Tasks
+**** Babel
+gulp babel should be run before test and run a extension on Chrome.
+#+BEGIN_SRC shell
+gulp babel
+#+END_SRC
+
+**** Watch
+Watch task helps you reduce your efforts during development extensions.
+#+BEGIN_SRC shell
+gulp watch
+#+END_SRC
+
+**** Build and Package
+It will build the app as a result you can have a distribution version of the app in dist. Run this command to build the Chrome Extension app.
+#+BEGIN_SRC shell
+gulp build
+#+END_SRC
+You can also distribute your project with compressed file using the Chrome Developer Dashboard at Chrome Web Store. This command will compress your app built by gulp build command.
+#+BEGIN_SRC shell
+gulp package
+#+END_SRC
+
+For more info: [[https://github.com/yeoman/generator-chrome-extension][Yeoman Chrome Extension generator]]
+
+
+** License
+MIT

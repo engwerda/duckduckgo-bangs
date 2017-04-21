@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "DuckDuckGo Bangs",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Addin FuckDuckGo !bang buttons to search results and adds DuckDuckGo !bang links to the context menu.",
+    "description": "The description of the application"
+  }
+}

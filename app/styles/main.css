@@ -1,0 +1,18 @@
+body {
+    padding: 20px;
+}
+.status {
+    display: none;
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+    padding: .30rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 0.9rem;
+}
+
+.italic{
+    font-style: italic;
+}

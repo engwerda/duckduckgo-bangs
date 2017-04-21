@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Test Extension Options</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+
+    <!-- build:css styles/options-vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="pure-g">
+        <div class="pure-u-5-5">
+            <h1 class="content-head is-center">Options</h1>
+
+            <div class="pure-form pure-form-stacked">
+                <h3>Button text</h3>
+                <label for="buttonText"></label>
+                <select id="buttonText">
+                    <option value="shortName">Short name</option>
+                    <option value="fullName">Full name</option>
+                    <option value="bang">Bang</option>
+                </select>
+                <span>How to display text on buttons. To display many buttons choose bang.</span>
+                <label for="newTab" class="pure-checkbox">
+                    <input id="newTab" type="checkbox" value="newTab">
+                    Open links in a new tab.
+                </label>
+
+                <div class="status"></div>
+                <button class="save pure-button pure-button-primary">Save</button>
+
+                <h3>Buttons to show</h3>
+                <label for="googleButton" class="pure-checkbox">
+                    <input id="googleButton" type="checkbox" value="googleButton">
+                    Google
+                </label>
+                <label for="youtubeButton" class="pure-checkbox">
+                    <input id="youtubeButton" type="checkbox" value="youtubeButton" />
+                    Youtube
+                </label>
+                <label for="googleImagesButton" class="pure-checkbox">
+                    <input id="googleImagesButton" type="checkbox" value="googleImagesButton">
+                    Google Images
+                </label>
+                <label for="googleMapsButton" class="pure-checkbox">
+                    <input id="googleMapsButton" type="checkbox" value="googleMapsButton">
+                    Google Maps
+                </label>
+                <label for="googleTranslateButton" class="pure-checkbox">
+                    <input id="googleTranslateButton" type="checkbox" value="googleTranslateButton">
+                    Google Translate
+                </label>
+                <label for="dictionaryButton" class="pure-checkbox">
+                    <input id="dictionaryButton" type="checkbox" value="dictionaryButton">
+                    Dictionary.com
+                </label>
+                <label for="wikipediaButton" class="pure-checkbox">
+                    <input id="wikipediaButton" type="checkbox" value="wikipediaButton">
+                    Wikipedia
+                </label>
+                <label for="googleNewsButton" class="pure-checkbox">
+                    <input id="googleNewsButton" type="checkbox" value="googleNewsButton">
+                    Google News
+                </label>
+                <label for="hackerNewsButton" class="pure-checkbox">
+                    <input id="hackerNewsButton" type="checkbox" value="hackerNewsButton">
+                    Hacker News
+                </label>
+                <label for="facebookButton" class="pure-checkbox">
+                    <input id="facebookButton" type="checkbox" value="facebookButton">
+                    Facebook
+                </label>
+                <label for="twitterButton" class="pure-checkbox">
+                    <input id="twitterButton" type="checkbox" value="twitterButton">
+                    Twitter
+                </label>
+                <label for="imdButton" class="pure-checkbox">
+                    <input id="imdButton" type="checkbox" value="imdButton">
+                    IMDb
+                </label>
+                <label for="bingButton" class="pure-checkbox">
+                    <input id="bingButton" type="checkbox" value="bingButton">
+                    Bing
+                </label>
+                <label for="githubButton" class="pure-checkbox">
+                    <input id="githubButton" type="checkbox" value="githubButton">
+                    Github
+                </label>
+                <label for="stackOverflowButton" class="pure-checkbox">
+                    <input id="stackOverflowButton" type="checkbox" value="stackOverflowButton">
+                    StackOverflow
+                </label>
+                <label for="redditButton" class="pure-checkbox">
+                    <input id="redditButton" type="checkbox" value="redditButton">
+                    Reddit
+                </label>
+                <label for="amazonButton" class="pure-checkbox">
+                    <input id="amazonButton" type="checkbox" value="amazonButton">
+                    Amazon
+                </label>
+                <label for="piratebayButton" class="pure-checkbox">
+                    <input id="piratebayButton" type="checkbox" value="piratebayButton">
+                    Piratebay
+                </label>
+                <label for="avaxhomeButton" class="pure-checkbox">
+                    <input id="avaxhomeButton" type="checkbox" value="avaxhomeButton">
+                    AvaxHome
+                </label>
+                <label for="rarbgButton" class="pure-checkbox">
+                    <input id="rarbgButton" type="checkbox" value="rarbgButton">
+                    RaRBG
+                </label>
+
+                <div class="status"></div>
+                <button class="save pure-button pure-button-primary">Save</button>
+
+                <h3>Links to show in context menu</h3>
+                <p>
+                    <label for="duckDuckGoLink" class="pure-checkbox">
+                        <input id="duckDuckGoLink" type="checkbox" value="duckDuckGoLink">
+                        DuckDuckGo
+                    </label>
+                    <span class="italic">Usefull if DuckDuckGo is not your default search engine.</span>
+                </p>
+
+                <label for="googleLink" class="pure-checkbox">
+                    <input id="googleLink" type="checkbox" value="googleLink">
+                    Google
+                </label>
+                <label for="youtubeLink" class="pure-checkbox">
+                    <input id="youtubeLink" type="checkbox" value="youtubeLink" />
+                    Youtube
+                </label>
+                <label for="googleImagesLink" class="pure-checkbox">
+                    <input id="googleImagesLink" type="checkbox" value="googleImagesLink">
+                    Google Images
+                </label>
+                <label for="googleMapsLink" class="pure-checkbox">
+                    <input id="googleMapsLink" type="checkbox" value="googleMapsLink">
+                    Google Maps
+                </label>
+                <label for="googleTranslateLink" class="pure-checkbox">
+                    <input id="googleTranslateLink" type="checkbox" value="googleTranslateLink">
+                    Google Translate
+                </label>
+                <label for="dictionaryLink" class="pure-checkbox">
+                    <input id="dictionaryLink" type="checkbox" value="dictionaryLink">
+                    Dictionary.com
+                </label>
+                <label for="wikipediaLink" class="pure-checkbox">
+                    <input id="wikipediaLink" type="checkbox" value="wikipediaLink">
+                    Wikipedia
+                </label>
+                <label for="googleNewsLink" class="pure-checkbox">
+                    <input id="googleNewsLink" type="checkbox" value="googleNewsLink">
+                    Google News
+                </label>
+                <label for="hackerNewsLink" class="pure-checkbox">
+                    <input id="hackerNewsLink" type="checkbox" value="hackerNewsLink">
+                    Hacker News
+                </label>
+                <label for="facebookLink" class="pure-checkbox">
+                    <input id="facebookLink" type="checkbox" value="facebookLink">
+                    Facebook
+                </label>
+                <label for="twitterLink" class="pure-checkbox">
+                    <input id="twitterLink" type="checkbox" value="twitterLink">
+                    Twitter
+                </label>
+                <label for="imdLink" class="pure-checkbox">
+                    <input id="imdLink" type="checkbox" value="imdLink">
+                    IMDb
+                </label>
+                <label for="bingLink" class="pure-checkbox">
+                    <input id="bingLink" type="checkbox" value="bingLink">
+                    Bing
+                </label>
+                <label for="githubLink" class="pure-checkbox">
+                    <input id="githubLink" type="checkbox" value="githubLink">
+                    Github
+                </label>
+                <label for="stackOverflowLink" class="pure-checkbox">
+                    <input id="stackOverflowLink" type="checkbox" value="stackOverflowLink">
+                    StackOverflow
+                </label>
+                <label for="redditLink" class="pure-checkbox">
+                    <input id="redditLink" type="checkbox" value="redditLink">
+                    Reddit
+                </label>
+                <label for="amazonLink" class="pure-checkbox">
+                    <input id="amazonLink" type="checkbox" value="amazonLink">
+                    Amazon
+                </label>
+                <label for="piratebayLink" class="pure-checkbox">
+                    <input id="piratebayLink" type="checkbox" value="piratebayLink">
+                    Piratebay
+                </label>
+                <label for="avaxhomeLink" class="pure-checkbox">
+                    <input id="avaxhomeLink" type="checkbox" value="avaxhomeLink">
+                    AvaxHome
+                </label>
+                <label for="rarbgLink" class="pure-checkbox">
+                    <input id="rarbgLink" type="checkbox" value="rarbgLink">
+                    RaRBG
+                </label>
+
+                <div class="status"></div>
+                <button class="save pure-button pure-button-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- build:js scripts/options-vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/options.js -->
+    <script src="scripts/options.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
