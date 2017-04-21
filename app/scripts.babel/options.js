@@ -95,6 +95,7 @@ function save_options() {
 
     }, function() {
         // Update status to let user know options were saved.
+
         let status = document.getElementsByClassName('status');
         for (let i = 0; i < status.length; i++) {
             status[i].style.display = 'block';
@@ -104,8 +105,9 @@ function save_options() {
             for (let i = 0; i < status.length; i++) {
                 status[i].textContent = '';
                 status[i].style.display = 'none';
+                chrome.runtime.reload();
             }
-        }, 2000);
+        }, 1000);
     });
 }
 
