@@ -1,7 +1,7 @@
 {
     "name": "DuckDuckGo-Bangs",
     "description": "Add DuckDuckGo bang buttons to search results and search links in the context menu.",
-    "version": "0.1.0",
+    "version": "0.5.0",
     "author": "Simon Engwerda",
     "manifest_version": 2,
     "icons": {
