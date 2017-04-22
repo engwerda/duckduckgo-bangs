@@ -4,8 +4,15 @@ chrome.runtime.onInstalled.addListener(function() {
 });
 
 // Function to add children to a parent Context Menu.
-function addChildToContextMenu(title, bang, parentMenu = parentContextMenu) {
+function refreshContextMenu() {
+    chrome.contextMenus.removeAll();
+    createMainMenu();
+    addChildrenToContextMenu();
+}
+
+function addChildToContextMenu(title, bang, parentMenu = 'duckduckgo') {
     chrome.contextMenus.create({
+        id: title.replace(' ', '').toLowerCase(),
         title: title,
         contexts: ['selection'],
         'parentId': parentMenu,
@@ -20,11 +27,16 @@ function addChildToContextMenu(title, bang, parentMenu = parentContextMenu) {
     });
 }
 
+
 //This adds Context Menu when user select some text.
-const parentContextMenu = chrome.contextMenus.create({
-    title: 'Search "%s" on:',
-    contexts: ['selection']
-});
+function createMainMenu() {
+    chrome.contextMenus.create({
+        id: 'duckduckgo',
+        title: 'Search "%s" on:',
+        contexts: ['selection']
+    });
+}
+
 
 // Add children when set in options.
 function addChildrenToContextMenu() {
@@ -95,7 +107,10 @@ function addChildrenToContextMenu() {
         }
     });
 }
-addChildrenToContextMenu();
+
+chrome.storage.onChanged.addListener(function (){
+    refreshContextMenu();
+});
 
 chrome.omnibox.onInputEntered.addListener(function(text) {
     chrome.tabs.query({
