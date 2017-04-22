@@ -105,11 +105,11 @@ function save_options() {
             for (let i = 0; i < status.length; i++) {
                 status[i].textContent = '';
                 status[i].style.display = 'none';
-                chrome.runtime.reload();
             }
         }, 1000);
     });
 }
+
 
 // Restores select box and checkbox state using the preferences
 // stored in chrome.storage.
