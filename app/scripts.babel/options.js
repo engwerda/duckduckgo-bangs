@@ -50,7 +50,6 @@ function save_options() {
         newTab: newTab,
         buttonText: buttonText,
 
-        duckDuckGoLink: duckDuckGoLink,
         googleButton: googleButton,
         youtubeButton: youtubeButton,
         googleImagesButton: googleImagesButton,
@@ -72,6 +71,7 @@ function save_options() {
         avaxhomeButton: avaxhomeButton,
         rarbgButton: rarbgButton,
 
+        duckDuckGoLink: duckDuckGoLink,
         googleLink: googleLink,
         youtubeLink: youtubeLink,
         googleImagesLink: googleImagesLink,
@@ -119,7 +119,6 @@ function restore_options() {
         newTab: false,
         buttonText: 'shortName',
 
-        duckDuckGoLink: false,
         googleButton: true,
         youtubeButton: true,
         googleImagesButton: true,
@@ -141,6 +140,7 @@ function restore_options() {
         avaxhomeButton: false,
         rarbgButton: false,
 
+        duckDuckGoLink: false,
         googleLink: true,
         youtubeLink: true,
         googleImagesLink: true,
@@ -167,7 +167,6 @@ function restore_options() {
         document.getElementById('newTab').checked = items.newTab;
         document.getElementById('buttonText').value = items.buttonText;
 
-        document.getElementById('duckDuckGoLink').checked = items.duckDuckGoLink;
         document.getElementById('googleButton').checked = items.googleButton;
         document.getElementById('youtubeButton').checked = items.youtubeButton;
         document.getElementById('googleImagesButton').checked = items.googleImagesButton;
@@ -189,6 +188,7 @@ function restore_options() {
         document.getElementById('avaxhomeButton').checked = items.avaxhomeButton;
         document.getElementById('rarbgButton').checked = items.rarbgButton;
 
+        document.getElementById('duckDuckGoLink').checked = items.duckDuckGoLink;
         document.getElementById('googleLink').checked = items.googleLink;
         document.getElementById('youtubeLink').checked = items.youtubeLink;
         document.getElementById('googleImagesLink').checked = items.googleImagesLink;
