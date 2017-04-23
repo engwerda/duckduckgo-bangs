@@ -10,7 +10,7 @@ function refreshContextMenu() {
     addChildrenToContextMenu();
 }
 
-function addChildToContextMenu(title, bang, parentMenu = 'duckduckgo') {
+function addChildToContextMenu(title, bang, parentMenu = 'parentMenu') {
     chrome.contextMenus.create({
         id: title.replace(' ', '').toLowerCase(),
         title: title,
@@ -31,7 +31,7 @@ function addChildToContextMenu(title, bang, parentMenu = 'duckduckgo') {
 //This adds Context Menu when user select some text.
 function createMainMenu() {
     chrome.contextMenus.create({
-        id: 'duckduckgo',
+        id: 'parentMenu',
         title: 'Search "%s" on:',
         contexts: ['selection']
     });
