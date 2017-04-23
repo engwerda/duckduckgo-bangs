@@ -1,5 +1,5 @@
-* Chrome DuckDuckGo !Bangs
-A chrome extension for making it easier to search using [[https://duckduckgo.com/bang][DuckDuckGo !bangs]].
+* DuckDuckGo !Bangs
+A web extension for making it easier to search using [[https://duckduckgo.com/bang][DuckDuckGo !bangs]].
 DuckDuckGo is a search engine that does not track you. DuckDuckGo !bangs allow you to search on thousands of sites, directly.
 This extension add two functions.
 - Add !bang buttons to the DuckDuckGo search results page.
@@ -49,7 +49,7 @@ git clone
 
 *** Gulp Tasks
 **** Babel
-gulp babel should be run before test and run a extension on Chrome.
+gulp babel should be run before test and run a extension on browser.
 #+BEGIN_SRC shell
 gulp babel
 #+END_SRC
@@ -61,11 +61,11 @@ gulp watch
 #+END_SRC
 
 **** Build and Package
-It will build the app as a result you can have a distribution version of the app in dist. Run this command to build the Chrome Extension app.
+It will build the app as a result you can have a distribution version of the app in dist. Run this command to build the browser extension app.
 #+BEGIN_SRC shell
 gulp build
 #+END_SRC
-You can also distribute your project with compressed file using the Chrome Developer Dashboard at Chrome Web Store. This command will compress your app built by gulp build command.
+This command will compress your app built by gulp build command.
 #+BEGIN_SRC shell
 gulp package
 #+END_SRC
