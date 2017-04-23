@@ -36,6 +36,7 @@ function createMainMenu() {
         contexts: ['selection']
     });
 }
+createMainMenu();
 
 
 // Add children when set in options.
@@ -107,6 +108,7 @@ function addChildrenToContextMenu() {
         }
     });
 }
+addChildrenToContextMenu();
 
 chrome.storage.onChanged.addListener(function (){
     refreshContextMenu();
