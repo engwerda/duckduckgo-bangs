@@ -4,6 +4,11 @@
     "version": "0.6.1",
     "author": "Simon Engwerda",
     "manifest_version": 2,
+    "applications": {
+        "gecko": {
+            "id": "duckduckgobangs@mozilla.org"
+        }
+    },
     "icons": {
         "16": "images/duckduckgo-16.png",
         "48": "images/duckduckgo-48.png",
