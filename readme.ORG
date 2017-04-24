@@ -28,7 +28,6 @@ Supports 19 !bangs at the moment of over 9000 available.
 - Avaxhome: !avax
 - RaRBG: !rarbg
 
-
 ** Credits
 [[https://github.com/ChimeraCoder][Aditya Mukerjee]] I have been using his [[https://github.com/ChimeraCoder/duckduckbang][Firefox addon]] for some time and it gave me the idea for the buttons.
  I also used his code as a starting point for adding the buttons to the search result.
@@ -40,12 +39,15 @@ Supports 19 !bangs at the moment of over 9000 available.
 - Custom sort links in context menu.
 - Add buttons to other search engines like Google.
 
-
 ** Development
-Clone the repo
+Clone the repo and run npm install
 #+BEGIN_SRC shell
-git clone
+git clone https://github.com/engwerda/duckduckgo-bangs.git
 #+END_SRC
+#+BEGIN_SRC shell
+npm install
+#+END_SRC
+
 
 *** Gulp Tasks
 **** Babel
