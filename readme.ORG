@@ -69,6 +69,11 @@ This command will compress your app built by gulp build command.
 #+BEGIN_SRC shell
 gulp package
 #+END_SRC
+Or create an xpi file.
+#+BEGIN_SRC shell
+gulp package-xpi
+#+END_SRC
+
 
 For more info: [[https://github.com/yeoman/generator-chrome-extension][Yeoman Chrome Extension generator]]
 
